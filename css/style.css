@@ -6,6 +6,7 @@
 /*-- Reset Code --*/
 :root {
 	--primary: #4a6bb0;
+	--darker: #233761;
 	--secondary: #9d3896;
 	--bright: #ffcb5c;
 	--main-text: #fff;
@@ -242,7 +243,9 @@ ul.callbacks_tabs.callbacks1_tabs {
 	color:#fff;
 	margin-bottom:40px;
 }
-
+.gallery-grids {
+	text-align: center;
+}
 .trend-grid{
 	padding:0 15px;
 }
@@ -309,7 +312,25 @@ padding: 70px 0 165px 0;
 /*--//trend--*/
 
 /*--new games--*/
-
+.button {
+	background: var(--highlight);
+	color: var(--main-text);
+	margin: 15px auto 30px;
+	padding: 8px;
+	border-radius: 8px;
+	display: block;
+	width: 220px;
+	box-shadow: 0 5px 5px #00000033;
+}
+h4.game_title {
+	color: var(--bright);
+	margin: 15px auto;
+	padding: 0px 0.5em;
+}
+.gallery-grid p {
+	color: var(--main-text);
+	padding: 0.5em;
+}
 .new-grid-agile{
 	margin-top:30px;
 }
@@ -529,10 +550,12 @@ a.learn:hover{
 /*-- //footer --*/
 .footer{
 	padding:35px 0px;
+	color: var(--main-text);
+	background: var(--darker);
 }
 .footer h4{
 	text-align:left;
-	color:#000;
+	color:var(--primary);
 	font-size:27px;
 	margin-bottom:30px;
 }
@@ -545,7 +568,7 @@ a.learn:hover{
 }
 .footer-left-w3 ul li h6{
 	font-size:16px;
-	color:#000;
+	color:var(--primary);
 	margin-left:10px;
 }
 .footer-left-w3 ul li a{
@@ -556,7 +579,7 @@ a.learn:hover{
 	margin-top:25px;
 }
 .footer-right-w3 h4{
-	color: #E91E63;
+	color: var(--primary);
 }
 .footer-right-w3 img {
     width: 130px;
@@ -564,7 +587,7 @@ a.learn:hover{
 
 .footer-right-w3 p{
 	font-size:14px;
-	color:#000;
+	color:var(--primary);
 	line-height:30px;
 }
 p.agileinfo{
@@ -573,7 +596,7 @@ p.agileinfo{
 .copyright p {
     text-align: center;
     font-size: 14px;
-    color: #000;
+    color: var(--primary);
     border-top: 1px dotted #000;
     padding: 30px 0px 0 0px;
 }
@@ -1054,22 +1077,31 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 /*-- gallery --*/
 .gallery-w3layouts {
-    background-color: #F7F7F7;
+    background-color: var(--primary);
 }
 .gallery-grids {
     margin: 3em 0 0;
 }
-.gallery-grid{
-	float:left;
-	width:25%;
+.gallery-grid {
+	float: left;
+	width: calc(25% - 1em);
+	margin: 0.5em;
+	box-shadow: 0 5px 30px -10px var(--darker);
+}
+.img_holder {
+	height: 280px;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+}
+.img_holder img {
+	min-height: 100%;
 }
 .gallery-grid a {
     display: block;
     overflow: hidden;
 }
-.gallery-grid img{
-	padding:.5em;
-}
+
 img.zoom-img {
      transform: scale(1, 1);
 	-webkit-transform: scale(1, 1);
@@ -1610,6 +1642,30 @@ color:rgb(2, 24, 136) !important;
 }
 .agileits_share ul li a.facebook:hover{
 	background:url('../images/img-sprite.png') no-repeat -159px -47px;
+}
+
+.sorter {
+	display: block;
+	flex-flow: wrap;
+	list-style: none;text-align: center;
+}
+
+
+.sorter > li {
+	margin: 5px 5px;
+	display: inline-block;
+	box-sizing: border-box;
+	white-space: nowrap;
+	padding: 8px;
+	background: var(--darker);
+	color: var(--main-text);
+	border-radius: 7px;
+}
+.sorter > li.active {
+	background: var(--highlight);
+}
+li>a {
+	color: inherit;
 }
 
 /*-- //single --*/
@@ -2478,6 +2534,11 @@ color:rgb(2, 24, 136) !important;
 	.wthree_blog_right {
 		width: 100%;
 		float: left;
+	}
+	.sorter > li {
+		margin: 5px 5px;
+		width: calc(100% / 3 - 15px);
+		white-space: nowrap;
 	}
 }	
 @media screen and (max-width:414px){
