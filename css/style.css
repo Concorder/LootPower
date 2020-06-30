@@ -2115,7 +2115,7 @@ li>a {
 
 	.navbar-nav {
 		margin: 0;
-		background: var(--primary);
+		background: background: #384067;
 	}
 	.navbar-collapse.in {
 		overflow-y: inherit;
