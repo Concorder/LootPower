@@ -1,12 +1,8 @@
-/*--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
---*/
 
 /*-- Reset Code --*/
 :root {
 	--primary: #4a6bb0;
-	--darker: #233761;
+	--darker: #2f3a82;
 	--secondary: #9d3896;
 	--bright: #ffcb5c;
 	--main-text: #fff;
@@ -73,7 +69,7 @@ img {
 	margin-bottom: 0;
 	position: absolute;
 	z-index: 99999;
-	background:var(--ambient_grad);
+	background:var(--high_grad);
 	border: none;
 	border-radius: 0;
 	width: 100%;
@@ -313,6 +309,8 @@ padding: 70px 0 165px 0;
 
 /*--new games--*/
 .button {
+	font-size: 16px;
+	font-weight: 600;
 	background: var(--highlight);
 	color: var(--main-text);
 	margin: 15px auto 30px;
@@ -322,14 +320,40 @@ padding: 70px 0 165px 0;
 	width: 220px;
 	box-shadow: 0 5px 5px #00000033;
 }
-h4.game_title {
-	color: var(--bright);
-	margin: 15px auto;
-	padding: 0px 0.5em;
+.button:hover {
+	background: var(--high_grad);
+	color: #fff;
+	text-shadow: 0 0 10px #fff;
 }
-.gallery-grid p {
+h3.game_title {
+	color: var(--bright);
+	margin: 0px auto 15px;
+	padding: 0px 0.5em;
+	text-transform: capitalize;
+}
+.gallery-grid .game_descr {
+	overflow-y: auto;
 	color: var(--main-text);
-	padding: 0.5em;
+	padding: 1em;
+	height: 210px;
+	margin-top: 15px;
+}
+.gallery-grid .game_descr::-webkit-scrollbar {
+	overflow: visible;
+	width: 3px;
+
+}
+.gallery-grid .game_descr::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.15);
+
+}
+.gallery-grid .game_descr::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.49);
+}
+
+.gallery-grid .game_descr::-webkit-scrollbar-thumb:hover {
+	background: #ff5722;
+	width: 5px;
 }
 .new-grid-agile{
 	margin-top:30px;
@@ -1077,12 +1101,14 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 /*-- gallery --*/
 .gallery-w3layouts {
-    background-color: var(--primary);
+    background-color: var(--ambient_grad);
+    background-color: var(--ambient_grad);
 }
 .gallery-grids {
     margin: 3em 0 0;
 }
 .gallery-grid {
+	background: #00000026;
 	float: left;
 	width: calc(25% - 1em);
 	margin: 0.5em;
@@ -1317,7 +1343,7 @@ a.blog-read:hover{
     display: block;
     font-size: 14px;
     line-height: 25px;
-    color:#999;
+    color: var(--main-text);
 }
 .contact-left-agile  .phone-agileits-w3layouts {
     margin: 25px 0;
@@ -1325,11 +1351,11 @@ a.blog-read:hover{
 .contact-left-agile p {
     font-size: 14px;
     line-height: 25px;
-    color: #999;
+	color: var(--main-text);
 }
 .contact-left-agile p  a{
-	  color: #999;
-	  font-size:14px;
+	color: var(--main-text);
+	font-size:14px;
 }
 .contact-right-w3 input.text, .contact-right-w3 textarea {
     width: 48.2%;
@@ -1651,7 +1677,7 @@ color:rgb(2, 24, 136) !important;
 }
 
 
-.sorter > li {
+.sorter li {
 	margin: 5px 5px;
 	display: inline-block;
 	box-sizing: border-box;
@@ -1661,7 +1687,7 @@ color:rgb(2, 24, 136) !important;
 	color: var(--main-text);
 	border-radius: 7px;
 }
-.sorter > li.active {
+.sorter  li.active {
 	background: var(--highlight);
 }
 li>a {
@@ -2451,7 +2477,7 @@ li>a {
 	}
 	.gallery-grid {
 		float: left;
-		width: 50%;
+		width: unset;
 	}
 	#small-dialog, #small-dialog2, #small-dialog3, #small-dialog4, #small-dialog5, #small-dialog6, #small-dialog7, #small-dialog8 {
 		max-width: 75%;
@@ -2535,7 +2561,7 @@ li>a {
 		width: 100%;
 		float: left;
 	}
-	.sorter > li {
+	.sorter  li {
 		margin: 5px 5px;
 		width: calc(100% / 3 - 15px);
 		white-space: nowrap;
