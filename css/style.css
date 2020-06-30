@@ -2,7 +2,7 @@
 /*-- Reset Code --*/
 :root {
 	--primary: #4a6bb0;
-	--darker: #2f3a82;
+	--darker: #384067;
 	--secondary: #9d3896;
 	--bright: #ffcb5c;
 	--main-text: #fff;
@@ -1102,13 +1102,12 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 /*-- gallery --*/
 .gallery-w3layouts {
     background-color: var(--ambient_grad);
-    background-color: var(--ambient_grad);
 }
 .gallery-grids {
     margin: 3em 0 0;
 }
 .gallery-grid {
-	background: #00000026;
+	background: #0000002b;
 	float: left;
 	width: calc(25% - 1em);
 	margin: 0.5em;
@@ -2115,7 +2114,7 @@ li>a {
 
 	.navbar-nav {
 		margin: 0;
-		background: background: #384067;
+		background: var(--darker);
 	}
 	.navbar-collapse.in {
 		overflow-y: inherit;
