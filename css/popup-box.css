@@ -4,7 +4,7 @@
 	max-width: 50%;
 	margin: 40px auto;
 	position: relative; 
-	background:#e91e63;
+	background:var(--ambient_grad);
 	padding:50px 35px;
 }
 #small-dialog-it,#small-dialog-in,#small-dialog-fr,#small-dialog-sh,#small-dialog-sf,#small-dialog-su,#small-dialog-me,#small-dialog-ch,#small-dialog-pi,#small-dialog-am {
@@ -224,19 +224,19 @@ button::-moz-focus-inner {
 
 .mfp-close {
 	width: 23px;
-    height: 30px;
-    line-height: 25px;
-    position: absolute;
-    left: -40px;
-    top: -30px;
-    text-decoration: none;
-    text-align: center;
-    padding: 0 0 18px 10px;
-    color: white !important;
-    font-style: normal;
-    font-size: 45px;
-    outline: none; 
- }
+	height: 30px;
+	line-height: 25px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	text-decoration: none;
+	text-align: center;
+	padding: 0 0 18px 10px;
+	color: #ffffff33 !important;
+	font-style: normal;
+	font-size: 45px;
+	outline: none;
+}
   .mfp-close:hover, .mfp-close:focus {
     opacity: 1; }
 
@@ -260,7 +260,7 @@ button::-moz-focus-inner {
 .login input[type="text"],.login input[type="password"]{
 	width:90%;
 	padding:5px;
-	margin:3px 0;x
+	margin:3px 0;
 	border: 1px solid #a63d56;
 	outline: none !important;
 }
