@@ -4,7 +4,7 @@
 	--primary: #4a6bb0;
 	--darker: #2b2b2b;
 	--secondary: #9d3896;
-	--bright: #ffcb5c;
+	--bright: #ffca7b;
 	--main-text: #fff;
 	--highlight: #ff0055;
 	--high_grad: linear-gradient(45deg, #ff4c88, #ffd270);
@@ -80,12 +80,63 @@ img {
 	margin-bottom: 0;
 	position: absolute;
 	z-index: 99999;
-	background:var(--darker);
+
+	background: var(--darker);
+	background-repeat: repeat-x;
 	border: none;
 	border-radius: 0;
 	width: 100%;
 	padding: 10px 0;
 	border-bottom: 1px solid var(--high_grad);
+	overflow: hidden;
+
+
+}
+.superheader {
+	-webkit-transition: all .3s cubic-bezier(.23,1,.32,1) 0s;
+	transition: all .3s cubic-bezier(.23,1,.32,1) 0s;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0.4;
+	left: 0;
+	top: 0;
+	background-image: url(https://assets.worldofwarcraft.com/static/components/Onion/components/OnionButton/ui_button_primary_lines.e93cd90f4a415afc30cf0cb480f16dc4.png),url(https://assets.worldofwarcraft.com/static/components/Onion/components/OnionButton/ui_button_primary_fill.32edb4905245e43f4e2483eee69318f7.png);
+	background-size: 665px 100%;
+
+	animation: aether-background 180s linear 0s infinite;
+	position: absolute;
+	z-index: -1;
+	transition: opacity 0.3s;
+}
+.navbar:hover .superheader {
+	opacity: 1;
+	animation-duration: 40s;
+}
+.navbar:hover li > a  {
+	color: #fff !important;
+	text-shadow: 0 0 10px #000;
+}
+/*@-webkit-keyframes aether-background {*/
+/*	0% {*/
+/*		background-position: 248px 50%,0 50%,0 50%*/
+/*	}*/
+
+/*	to {*/
+/*		background-position: 500% 50%,-1330px 50%,-665px 50%*/
+/*	}*/
+/*}*/
+
+@keyframes aether-background {
+	0% {
+		background-position: 0 50%,0 50%,0 50%
+	}
+
+	to {
+		background-position: -1300px 50%,-665px 50%,0% 50%
+	}
 }
 .main .navbar {
 	background: transparent;
@@ -99,17 +150,16 @@ img {
 }
 .navbar-nav>li {
 	padding: 5px 15px;
-}
-
-.navbar-default .navbar-nav>li>a {
-	color: #fff;
+	font-size: 16px;
+	color: var(--bright);
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	color: #FFF;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #E91E63;
+    color: #ffffff;
+	text-shadow: 0 0 10px var(--bright);
     background-color: transparent;
 }
 /*-- Link-Hover-Effect --*/
@@ -379,7 +429,7 @@ h3.game_title {
 	width: calc(100% - 30px);
 	position: absolute;
 	overflow: hidden;
-	padding: 6.5em 0;
+
 }
 .view img {
    display: block;
@@ -402,8 +452,10 @@ h3.game_title {
    margin:0;
 }
 .view-eighth .mask {
+	display: flex;
    background-color:rgba(0, 0, 0, 0.67);
-   top: -200px;
+   top: 0;
+	bottom: 0;
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
@@ -411,23 +463,20 @@ h3.game_title {
    -moz-transition: all 0.3s ease-out 0.5s;
    transition: all 0.3s ease-out 0.5s;
 }
+.flex_holder {
+	margin: auto;
+}
+.flex_holder  p {
+	padding: 0 30px;
+}
 .view-eighth h2 {
-   -webkit-transform: translateY(-200px);
-   -moz-transform: translateY(-200px);
-   -o-transform: translateY(-200px);
-   -ms-transform: translateY(-200px);
-   transform: translateY(-200px);
+
    -webkit-transition: all 0.2s ease-in-out 0.1s;
    -moz-transition: all 0.2s ease-in-out 0.1s;
    transition: all 0.2s ease-in-out 0.1s;
 }
 .view-eighth p {
    color: #333;
-   -webkit-transform: translateY(-200px);
-   -moz-transform: translateY(-200px);
-   -o-transform: translateY(-200px);
-   -ms-transform: translateY(-200px);
-   transform: translateY(-200px);
    -webkit-transition: all 0.2s ease-in-out 0.2s;
    -moz-transition: all 0.2s ease-in-out 0.2s;
    -o-transition: all 0.2s ease-in-out 0.2s;
@@ -447,6 +496,7 @@ h3.game_title {
    -ms-animation: bounceY 0.9s linear;
    animation: bounceY 0.9s linear;
    height: 100%;
+	transition: 0.9s;
 }
 .view-eighth:hover h2 {
    -webkit-transform: translateY(0px);
@@ -473,12 +523,7 @@ h3.game_title {
    transition-delay: 0.2s;
 }
 @keyframes bounceY {
-    0% { transform: translateY(-205px);}
-    40% { transform: translateY(-100px);}
-    65% { transform: translateY(-52px);}
-    82% { transform: translateY(-25px);}
-    92% { transform: translateY(-12px);}
-    55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}
+    100% { transform: translateY(0px);}
 }
 
 /*--//new games--*/
@@ -972,7 +1017,6 @@ figure.effect-zoe:hover p.icon-links a:first-child {
    overflow: hidden;
    top: 0;
    left: 0;
-   padding: 6em 1em;
 }
 .view img {
    display: block;
@@ -1070,6 +1114,10 @@ figure.effect-zoe:hover p.icon-links a:first-child {
    line-height:2em;
    text-align:left;
 }
+.navbar-collapse {
+	box-shadow: none;
+
+}
 .w3l_social_icons {
     float: left;
 	margin: 1.5em 0 0;
@@ -1119,14 +1167,13 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     margin: 3em 0 0;
 }
 .gallery-grid {
-	background: #0000002b;
 	float: left;
 	width: calc(25% - 1em);
 	margin: 0.5em;
-	box-shadow: 0 5px 30px -10px var(--darker);
+
 }
 .img_holder {
-	height: 280px;
+	height: 362px;
 	overflow: hidden;
 	text-align: center;
 	position: relative;
@@ -1315,6 +1362,13 @@ p.agileits{
 .item_info ul li  a:hover{
 	 color:#e91e63
 }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border: none;
+}
+.navbar-default .navbar-nav > li > a {
+	color: var(--bright);
+}
+
 .blog-text-w3ls p{
     color: #999;
     font-size:14px;
@@ -1378,8 +1432,8 @@ a.blog-read:hover{
     padding: 15px 10px;
     background-color: transparent;
     border: none;
-    border-left: 1px solid rgb(2, 24, 136);
-    border-bottom: 1px solid rgb(2, 24, 136);
+    border-left: 1px solid var(--bright);
+    border-bottom: 1px solid var(--bright);
     outline: transparent;
 }
 
@@ -1391,9 +1445,9 @@ a.blog-read:hover{
     float: right;
     padding: 7px 15px;
     background-color: transparent;
-    border: 2px solid rgb(2, 24, 136);
+    border: 2px solid var(--bright);
     outline: transparent;
-	color:rgb(2, 24, 136);
+	color: var(--bright);
 }
 .contact-right-w3 input.more_btn:hover {
 	color: #FFf;
@@ -1401,7 +1455,7 @@ a.blog-read:hover{
 	background:#FF166D;
 }
  ::-webkit-input-placeholder{
-color:rgb(2, 24, 136) !important;
+color: var(--bright) !important;
 }
 /*-- Map --*/
 
@@ -1777,6 +1831,7 @@ li>a {
 	.collection-left {
 		min-height: 556.4px;
 	}
+
 }
 @media screen and (max-width: 1080px){
 
@@ -1850,7 +1905,9 @@ li>a {
 		margin-top:7px;
 		font-size: 35px;
 	}
-
+.img_holder {
+	height: 222px;
+}
 	.navbar-nav>li {
 		padding: 5px 5px;
 		border-bottom: 1px solid var(--secondary);
@@ -2132,9 +2189,10 @@ li>a {
 	}	
 
 	.navbar-nav {
-		margin: 0;
+		margin: 6px 0 0 ;
 		background: var(--darker);
 	}
+
 	.navbar-collapse.in {
 		overflow-y: inherit;
 	}
@@ -2466,6 +2524,12 @@ li>a {
 	}
 }
 @media screen and (max-width:480px){
+	.img_holder {
+		height: 238px ;
+	}
+	.superheader {
+		height: 76px;
+	}
 	.new-grid-w3l.col-md-6 {
 		width: 100%;
 		float: left;
