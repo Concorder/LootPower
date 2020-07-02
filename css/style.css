@@ -85,7 +85,7 @@ img {
 	position: absolute;
 	z-index: 99999;
 
-	background: var(--darker);
+	background: var(--ambient_grad);
 	background-repeat: repeat-x;
 	border: none;
 	border-radius: 0;
