@@ -1,5 +1,5 @@
 /* Styles for dialog window */
-#small-dialog,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5,#small-dialog6,#small-dialog7,#small-dialog8{
+div[id*="small-dialog"]{
 	text-align: left;
 	max-width: 50%;
 	margin: 40px auto;
@@ -300,11 +300,14 @@ button::-moz-focus-inner {
 	transition: all 0.5s ease-in-out;
 }
 @media all and (max-width:640px){
-	#small-dialog, #small-dialog2 { 
+	div[id*="small-dialog"] {
 		max-width: 420px; 
 	}
 }
 @media all and (max-width:480px){
+	div[id*="small-dialog"] {
+		max-width: 320px;
+	}
 	.comments-area textarea{
 		height:100px;
 	}
@@ -315,7 +318,7 @@ button::-moz-focus-inner {
 	.mfp-close {
 		left: 0;
 	}
-	#small-dialog, #small-dialog2 {
+	div[id*="small-dialog"] {
 		max-width: 320px;
 	}
 	
