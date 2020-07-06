@@ -1781,7 +1781,40 @@ color: var(--bright) !important;
 li>a {
 	color: inherit;
 }
+.terms {
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.terms {
+	color: #fff;
 
+}
+.terms h4 {
+	margin-top: 15px;
+	margin-bottom: 5px;
+	text-align: left;
+	text-shadow: none;
+	font-family: sans-serif;
+	color: var(--bright);
+
+}
+.terms a {
+	color: var(--bright);
+	text-decoration: underline;
+}
+.terms table {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: block;
+}
+.terms td {
+	padding: 5px;
+	border: 1px solid var(--bright);
+}
+.terms ul {
+	list-style: none;
+}
 /*-- //single --*/
 
 /*-- responsive--*/
@@ -1808,6 +1841,7 @@ li>a {
 		min-height: 626px;
 	}
 }
+
 @media screen and (max-width: 1366px){
 	[class*="small-dialog"] {
 		padding: 40px 20px;
