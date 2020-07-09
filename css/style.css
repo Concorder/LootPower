@@ -824,6 +824,9 @@ input::-webkit-inner-spin-button {
 .profile_page .button {
 	min-width: 180px;
 }
+.profile_page .agileits_reply {
+	margin-bottom: 50px;
+}
 .profile_page .agileits_reply h3 {
 	text-align: center;
 }
