@@ -396,7 +396,6 @@ padding: 70px 0 165px 0;
 }
 .button.underline {
 	background: var(--primary);
-	text-decoration: underline;
 	border: none;
 }
 .button.underline:hover{
