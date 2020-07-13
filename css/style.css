@@ -446,23 +446,24 @@ h3.game_title {
 .view.gallery-grid .mask {
 	width: 100%;
 }
-.gallery-grid .game_descr::-webkit-scrollbar {
+::-webkit-scrollbar {
 	overflow: visible;
-	width: 3px;
+	width: 10px;
 
 }
-.gallery-grid .game_descr::-webkit-scrollbar-track {
-	background: rgba(0, 0, 0, 0.15);
+::-webkit-scrollbar-track {
+	background: var(--darker);
 
 }
-.gallery-grid .game_descr::-webkit-scrollbar-thumb {
-	background: rgba(255, 255, 255, 0.49);
+::-webkit-scrollbar-thumb {
+	background: var(--primary);
 }
 
-.gallery-grid .game_descr::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
 	background: #ff5722;
-	width: 5px;
+
 }
+
 .new-grid-agile{
 	margin-top:30px;
 }
@@ -698,12 +699,33 @@ a.learn:hover{
 /*-- //footer --*/
 .footer{
 	padding:35px 0px;
-	color: var(--primary);
+	color: var(--bright);
 	background: var(--darker);
 }
+.footer .links {
+	margin-top: 25px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: space-between;
+	margin-bottom: 25px;
+}
+.footer .links a {
+	color: #b7b7b7;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 7px;
+	padding-right: 7px;
+	text-decoration: none;
+}
+.footer .links a:hover {
+	text-decoration: underline;
+	color: var(--bright);
+}
+
 .footer h4{
 	text-align:left;
-	color:var(--primary);
+	color:var(--bright);
 	font-size:27px;
 	margin-bottom:30px;
 }
@@ -718,8 +740,8 @@ a.learn:hover{
 	display: flex;
 }
 .footer-left-ltpwr ul li h6{
-	font-size:16px;
-	color:var(--primary);
+	font-size:14px;
+	color:#b7b7b7;
 	margin-left:10px;
 	text-align: left;
 }
@@ -731,7 +753,7 @@ a.learn:hover{
 	margin-top:25px;
 }
 .footer-right-ltpwr h4{
-	color: var(--primary);
+	color:#b7b7b7;
 }
 .footer-right-ltpwr img {
     width: 200px;
@@ -739,7 +761,7 @@ a.learn:hover{
 
 .footer-right-ltpwr p{
 	font-size:14px;
-	color:var(--primary);
+	color:#b7b7b7;
 	line-height:30px;
 }
 p.agileinfo{
@@ -748,7 +770,7 @@ p.agileinfo{
 .copyright p {
     text-align: center;
     font-size: 14px;
-    color: var(--primary);
+    color: #808080;
     border-top: 1px dotted #000;
     padding: 30px 0px 0 0px;
 }
@@ -790,7 +812,7 @@ p.agileinfo{
 top: 3px;
 }
 .round_num {
-	padding: 3px 6px;
+	padding: 3px 9px;
 	background: var(--secondary);
 	color: #fff;
 	border-radius: 60%;
@@ -799,8 +821,7 @@ top: 3px;
 	left: -35px;
 	top: -3px;
 	display: block;
-	width: 28px;
-	height: 28px;
+
 }
 .card_row {
 	display: flex;
@@ -862,8 +883,21 @@ input::-webkit-inner-spin-button {
 	color: var(--secondary);
 	border: 1px solid var(--secondary);
 }
+.contact-agileinfo {
+	min-height: 50vh;
+}
+.thx .contact-agileinfo {
+	display: flex;
+}
+.thx .contact-agileinfo .framed {
+	margin: auto;
+}
+.thx .contact-agileinfo .framed h3 {
+	margin-bottom: 20px;
+}
 .contact-agileinfo p {
 	color: #fff;
+
 
 }
 .about-grid-right-ltpwr-agile img {
@@ -1743,6 +1777,7 @@ color: var(--bright) !important;
     background: var(--ambient_grad);
 	color: var(--main-text);
 }
+
 .wthree_blog_left_grid h4 {
     font-size: 1.5em;
 	color:var(--highlight);
@@ -1761,6 +1796,10 @@ color: var(--bright) !important;
     text-align: left;
     font-weight: 700;
     margin-top: 10px;
+}
+.unregistered .wthree_blog_left_grid h3 {
+	text-transform: inherit;
+	text-align: center;
 }
 .wthree_blog_left_grid ul {
     padding: 0em 0 1em 0;
@@ -1836,13 +1875,30 @@ color: var(--bright) !important;
 	text-align:left;
 	margin-top:30px;
 }
-.agileits_reply input[type="text"], .agileits_reply input[type="email"] {
+.agileits_reply input[type="text"], .agileits_reply input[type="email"], select {
     width: 100%;
     padding: 13px;
     border: 1px solid var(--primary);
     margin-bottom: 30px;
 	background:transparent;
 	outline:none;
+}
+select {
+	color: var(--bright);
+}
+select:focus {
+	background: var(--primary);
+	color: var(--bright);
+}
+.agileits_reply .membership_title {
+	margin-top: 18px;
+	text-align: center;
+}
+.card-icons {
+	text-align: center;
+}
+.card-icons img {
+	width: 70px;
 }
 .framed h5 {
 	margin-bottom: 10px;
