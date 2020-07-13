@@ -93,9 +93,9 @@ html[xmlns] .slides {display: block;}
     background: none;
     cursor: pointer;
     text-indent: -9999px;
-    border:2px solid #e91e63
+    border:2px solid var(--secondary)
 }
-.flex-control-paging li a.flex-active { background:#e91e63; cursor: default; border:2px solid #e91e63;}
+.flex-control-paging li a.flex-active { background:var(--secondary); cursor: default; border:2px solid var(--secondary);}
 .flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
 .flex-control-thumbs li {width: 25%; float: left; margin: 0;}
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}

@@ -714,10 +714,14 @@ a.learn:hover{
 .footer-left-ltpwr .glyphicon{
 	font-size:16px;
 }
+.footer .footer-left-ltpwr ul {
+	display: flex;
+}
 .footer-left-ltpwr ul li h6{
 	font-size:16px;
 	color:var(--primary);
 	margin-left:10px;
+	text-align: left;
 }
 .footer-left-ltpwr ul li a{
 	font-size:14px;
@@ -2220,6 +2224,7 @@ li>a {
 	.footer-middle-ltpwr{
 		padding:0;
 	}
+
 	.img-ltpwr-agile{
 		width:25%;
 		float:left;
@@ -3007,7 +3012,7 @@ li>a {
 		padding: 1em 1em!important;
 	}
 	.footer-right-ltpwr img {
-		width: 9%;
+		width: 35%;
 	}
 	.contact-left-agile {
 		width: 100%;

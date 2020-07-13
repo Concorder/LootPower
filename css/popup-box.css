@@ -34,7 +34,7 @@ a.play-icon.popup-with-zoom-anim img:hover {
 .portfolio-items h4{
 	margin:1em 0;
 	font-size:25px;
-	color:#a63d56;
+	color:var(--bright);
 }
 .portfolio-items p{
 	text-align:justify;
@@ -255,13 +255,13 @@ button::-moz-focus-inner {
 }
 .login h3,.signup h3{
 	margin:1em 0;
-	color: #a63d56;
+	color: var(--bright);
 }
 .login input[type="text"],.login input[type="password"]{
 	width:90%;
 	padding:5px;
 	margin:3px 0;
-	border: 1px solid #a63d56;
+	border: 1px solid var(--bright);
 	outline: none !important;
 }
 .signup input[type="text"]{
@@ -281,7 +281,7 @@ button::-moz-focus-inner {
 	border: solid 1px #222;
 }
 .login input[type="submit"],.signup input[type="submit"]{
-	background: #347083;
+	background: var(--primary);
 	border: 0px;
 	padding: 5px 10px;
 	margin: 10px 10px;
