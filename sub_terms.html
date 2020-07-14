@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Profile</title>
+    <title>Subscription Terms</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="Mobile Games Online" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <link rel="icon" type="image/png" href="./lootpower.ico" />
     <!-- css -->
@@ -17,7 +17,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
 </head>
-<body class="profile_page">
+<body class="faq">
 <!-- banner -->
 <div class="sub-banner">
     <!-- Navbar -->
@@ -43,7 +43,7 @@
                     <li class="hover-effect"><a href="about.html">About</a></li>
                     <li class="hover-effect"><a href="games.html">Games</a></li>
                     <li class="hover-effect"><a href="news.html">News</a></li>
-                    <li class="hover-effect active"><a href="contact.html">Contact</a></li>
+                    <li class="hover-effect"><a href="contact.html">Contact</a></li>
                     <li id="profile"><a href=""><?xml version="1.0" encoding="iso-8859-1"?>
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 478.024 478.024" style="enable-background:new 0 0 478.024 478.024; " xml:space="preserve">
@@ -101,33 +101,29 @@
     </nav>
 </div>
 <!-- banner -->
-<div class="contact-agileinfo">
+
+<!-- about-->
+<div class="about-agileinfo min_height" id="about">
     <div class="container">
-        <h2>Profile</h2>
+        <h2>Subscription Terms </h2>
+        <div class="terms">
+            <article>
+                <p>By using this service, you acknowledge that you are over 18 years of age, and that you accept the subscription terms of this offer. This is a subscription service, charged at a discounted rate of 1 EUR for the first 3 days and followed by a monthly charge of 28.95 EUR, unless terminated within the first 3 days. There will be a 1 EUR charge for authorization purposes. This charge will be reverted back to you.</p>
+            </article>
+            <article>
 
-        <div class="col-md-6 contact-right-ltpwr framed">
-            <h5>Phone number</h5>
-            <h3 id="user_id">1234567</h3>
-            <button class="button btn-secondary">Logout</button>
-            <button class="button underline">Unsubscribe</button>
+                <p>lootpower.com may change the applicable subscription terms at any time. If significant changes occur, lootpower.com commits to notify the member at least 3 weeks prior to the changes taking effect. The applicable subscription terms will always be available at lootpower.com.</p>
+            </article>
+
         </div>
-
-
-        <div class="clearfix"></div>
     </div>
 </div>
-<div class="container">
-<div class="agileits_reply col-md-6 framed">
-    <h3>Have a question?</h3>
-    <form action="#" method="post">
-        <input type="text" name="Name" placeholder="Name" required="">
-        <input type="email" name="Email" placeholder="Email" required="">
-        <input type="text" name="Subject" placeholder="Subject" required="">
-        <textarea name="Message" placeholder="Type your comment..." required=""></textarea>
-        <input type="submit" class="button btn-secondary" value="Submit">
-    </form>
-</div>
-</div>
+<!-- //about -->
+
+
+
+
+
 <!-- footer -->
 <div class="footer">
 
@@ -200,4 +196,8 @@
 </div>
 <!-- //footer -->
 </body>
+
+<script>$( document ).ready(function() {let container=document.getElementById("game_container"),button=document.getElementById("fs");var fullscreen=!1;function makeFullScreen(e){e.requestFullscreen?e.requestFullscreen():e.msRequestFullscreen?e.msRequestFullscreen():e.mozRequestFullScreen?e.mozRequestFullScreen():e.webkitRequestFullscreen?e.webkitRequestFullscreen():console.log("Fullscreen API is not supported")}$(button).on("click",function(){1==fullscreen?(document.exitFullscreen(),button.innerText="Full screen",$(button).addClass("passive"),fullscreen=!1):(makeFullScreen(container),button.innerText="x",$(button).removeClass("passive"),fullscreen=!0)});});</script>
+
+
 </html>

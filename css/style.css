@@ -601,8 +601,14 @@ h3.game_title {
 	position: relative;
 	overflow: hidden;
 }
-.service-grid-agileits{
-	text-align:center;
+.service-grid-agileits {
+	padding: 30px 5px;
+	margin: 0 10px;
+	width: calc(25% - 20px);
+	min-height: 300px;
+	margin-bottom: 90px;
+	background: #202d4ae0;
+	text-align: center;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -627,14 +633,14 @@ h3.game_title {
 	line-height:27px;
 	color:var(--main-text);
 }
-.service-grid-agileits a{
-	color:var(--secondary);
-	border:2px solid var(--secondary);
-	font-size:15px;
-	margin-top:15px;
-	padding:7px 15px;
-	display:inline-block;
-		transition: 0.5s all;
+.service-grid-agileits a {
+	color: var(--secondary);
+	border: 2px solid var(--secondary);
+	font-size: 15px;
+	margin-top: 15px;
+	padding: 7px 15px;
+	display: inline-block;
+	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
@@ -1068,7 +1074,6 @@ figure.effect-zoe p.description > .button {
 .services-agileits-ltpwrlayouts.main_video_bg h4,
 .services-agileits-ltpwrlayouts.main_video_bg p {
 	color: #fff;
-	text-shadow: 0 0 5px #b00fc3, 0 0 10px blue;
 }
 /*videoBG*/
 .video-responsive {
@@ -1088,7 +1093,7 @@ figure.effect-zoe p.description > .button {
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 100%;
+
 	background: #000;
 	z-index: 5;
 }
@@ -2098,7 +2103,141 @@ li>a {
 	height: 1px;
 	background: var(--primary);
 }
+/*accordeon*/
+.accordion ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.accordion li {
+	margin:0;
+	padding:0;
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+	display:none;
+}
+.accordion h4, .mainSubheader {
+	font-weight: 600;
+	font-size: 18px;
 
+}
+.mainSubheader {
+	margin-bottom: 45px;
+}
+#faq {
+	min-height: 444px;
+}
+.min_height {
+	min-height:444px}
+#faq h2 {
+	margin-bottom: 0;
+}
+#faq h4 {
+	margin-bottom: 30px;
+	color: var(--bright);
+}
+.accordion label {
+	margin-left: 40px;
+	position: relative;
+	border-radius: 10px;
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 16px;
+	color: var(--bright);
+	cursor: pointer;
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+	-moz-user-select: none; /* mozilla browsers */
+	-khtml-user-select: none; /* webkit (konqueror) browsers */
+	-ms-user-select: none;
+}
+.accordion label:hover {
+	color: var(--secondary);
+}
+.accordion [type=radio] ~ label::before,
+.accordion [type=checkbox] ~ label::before {
+	position: absolute;
+	content: "-";
+	color: var(--secondary);
+	font-size: 28px;
+	font-weight: 300;
+	margin-right: 12px;
+	vertical-align: text-top;
+	left: -40px;
+	top: 5px;
+}
+.accordion ul li label:hover,
+.accordion [type=radio]:checked ~ label,
+.accordion [type=checkbox]:checked ~ label {
+	color: var(--secondary);
+}
+.accordion [type=radio]:checked ~ label::before,
+.accordion [type=checkbox]:checked ~ label::before {
+	content: '+';
+	top: 9px;
+}
+.accordion .content {
+	overflow:hidden;
+
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+}
+.accordion p {
+	font-size: 18px;
+
+	padding: 0px 0 20px;
+	line-height: 25px
+}
+.toform {
+	margin-bottom: 25px;
+	display: block;
+}
+.vertical ul li {
+	overflow:hidden;
+	margin:0 0 1px;
+}
+.vertical ul li label {
+	padding:10px 0px;
+}
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+	border-bottom:0;
+}
+.vertical ul li .content {
+	height:0px;
+	border-top:0;
+	transition: all .5s ease-out;
+}
+.vertical [type=checkbox]:checked ~ label ~ .content {
+	height:auto;
+}
+@media all and (max-width: 980px) {
+	main .faqBox h2 {
+		font-size: 22px;
+	}
+	main .contactForm {
+		background: none;
+	}
+	.accordion label{
+		position: relative;
+	}
+	.accordion label::before {
+		position: absolute;
+		left:0%;
+		top: 40%;
+	}
+	main .contactBox, main .faqBox {
+		margin-right: auto;
+		margin-left: auto;
+		float: none;
+	}
+	main .contactBox h2, main .faqBox h2 {
+		margin-bottom: 30px;
+	}
+	main .container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
 /*-- //single --*/
 
 /*-- responsive--*/
@@ -2250,7 +2389,6 @@ li>a {
 		font-size: 24px;
 	}
 	.service-grid-agileits {
-		width: 25%;
 		float: left;
 	}
 	.service-grid-agileits .glyphicon {
@@ -2595,8 +2733,9 @@ li>a {
 		font-size: 19px;
 	}
 	.service-grid-agileits {
-		width: 50%;
+		width: calc(50% - 20px);
 		float: left;
+		margin-bottom: 30px;
 	}
 	.service-grid-agileits-bottom{
 		margin-top:50px;
