@@ -93,7 +93,7 @@ img {
 	width: 100%;
 	padding: 10px 0;
 	border-bottom: 1px solid var(--high_grad);
-	overflow: hidden;
+
 }
 .squire {
 	background: var(--secondary);
@@ -123,10 +123,7 @@ img {
 	opacity: 1;
 	animation-duration: 40s;
 }
-.navbar:hover li > a  {
-	color: #fff !important;
-	text-shadow: 0 0 10px #000;
-}
+
 /*@-webkit-keyframes aether-background {*/
 /*	0% {*/
 /*		background-position: 248px 50%,0 50%,0 50%*/
@@ -1612,12 +1609,44 @@ p.agileits{
 	font-size: 18px;
 	color: var(--bright);
 }
+.navbar:hover  #navbar > ul > li > a {
+	color: #fff;
+	text-shadow: 0 0 10px #000;
+}
+
+#sub_menu  a:hover {
+	color: #fff;
+	text-shadow: 0 0 10px #fff;
+
+}
+
+#sub_menu > li > a{
+	color: var(--bright);
+}
+#sub_menu:hover {
+
+}
+#sub_menu {
+	padding-left: 10px;
+	display: none;
+	height: max-content;
+	position: absolute;
+	width: max-content;
+	list-style: none;
+	margin-top: 50px;
+	border-left: 2px solid var(--secondary);
+}
+.main #sub_menu {
+	margin-top: 20px;
+}
+#sub_menu a {
+
+}
 #profile svg {
 	width: 30px;
 	top: 12px;
 	fill: var(--bright);
 	position: absolute;
-	top: 12px;
 	transition: 0.5s;
 }
 #profile svg:hover {
@@ -1626,6 +1655,8 @@ p.agileits{
 	filter: drop-shadow( 0px 0px 3px var(--bright) );
 
 }
+
+
 .blog-text-ltpwrls p{
     color: #999;
     font-size:14px;
@@ -1708,8 +1739,8 @@ a.blog-read:hover{
 }
 .contact-right-ltpwr input.more_btn:hover {
 	color: #FFf;
-    border: 2px solid #FF166D;
-	background:#FF166D;
+    border: 2px solid var(--secondary);
+	background: var(--secondary);
 }
  ::-webkit-input-placeholder{
 color: var(--bright) !important;
@@ -2654,7 +2685,13 @@ li>a {
 	}
 }
 @media screen and (max-width: 736px){
-
+	#sub_menu {
+		position: relative;
+		margin-top: 0;
+		margin-left: 27px;
+		border-left: 2px solid var(--secondary);
+		margin-bottom: 20px;
+	}
 	.navbar-header h1 {
 		text-align: left;
 		padding-left: 15px;
