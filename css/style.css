@@ -2487,6 +2487,10 @@ li>a {
 		margin-top:7px;
 		font-size: 35px;
 	}
+	.payment_large {
+		display: block;
+		text-align: center;
+	}
 .img_holder {
 	height: 222px;
 }
@@ -3132,10 +3136,7 @@ li>a {
 		display: flex;
 		flex-direction: column;
 	}
-	.payment_large {
-		display: block;
-		text-align: center;
-	}
+
 	.extraCard {
 		margin-top: 0;
 	}
