@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact Us</title>
+    <title>Loot Power</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Google Tag Manager -->
@@ -35,6 +35,7 @@
 
 <!-- banner -->
 <div class="sub-banner">
+
     <!-- Navbar -->
     <nav class="navbar navbar-default">
         <div class="superheader"></div>
@@ -58,7 +59,7 @@
                     <li class="hover-effect"><a href="about.html">About</a></li>
                     <li class="hover-effect"><a href="games.html">Games</a></li>
                     <li class="hover-effect"><a href="news.html">News</a></li>
-                    <li class="hover-effect active"><a href="contactus.html">Contact</a></li>
+                    <li class="hover-effect"><a href="contactus.html">Contact</a></li>
                     <li ><a id="profile" href="./profile.html"><?xml version="1.0" encoding="iso-8859-1"?>
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 478.024 478.024" style="enable-background:new 0 0 478.024 478.024; " xml:space="preserve">
@@ -110,7 +111,7 @@
 </svg></a>
                         <ul id="sub_menu">
                             <li><a href="./login.html">Login</a></li>
-                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="signup.html">Sign In</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -120,58 +121,11 @@
 
     </nav>
 </div>
-<!-- banner -->
-<div class="blog">
-    <div class="container">
-        <div class="col-md-7 wthree_blog_left">
 
-            <div class="agileits_reply">
-                <h3 class="membership_title">
-                    The following cards are accepted as a payment method:
-                </h3>
-            </div>
-            <div class="card-icons">
-                <img src="https://img2.onlinerecipesbook.com/EEZwyQ9RLHj22QB.png" alt="">
-                <img src="https://img2.onlinerecipesbook.com/8S75uuy20w_mjVh.png" alt="">
-                <img src="https://img2.onlinerecipesbook.com/nwO5I0cvsMK_NWv.png" alt="">
-            </div>
-
-            <!--PLACE FOR IFRAME-->
-            <div class="payment_large" >
-                <img src="https://img.onlinerecipesbook.com/imgs/mastercard.png">
-                <img src="./images/mastercard.svg">
-                <img src="./images/visa_white.png">
-                <img src="./images/visa-secure.png"></div>
-        </div>
-
-        <div class="col-md-5 wthree_blog_right">
-
-            <div class="ltpwragile_flickr_posts">
-
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng1.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng2.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng3.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng4.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng5.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng6.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-        <div class="clearfix"> </div>
+<section id="game">
+    <div class="wrap" id="main_container"><div id="game_container" class="wrap"><a id="fs" class="passive" data-toggle-fullscreen="" href="#">Full screen</a><iframe src="http://wapimo.com/html5/top/2048/index.html" id="gameiframe" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" allow="fullscreen" style="border-style:none; overflow:hidden; width: 100%; height: 100%; min-height: 580px"></iframe><script>window.onload=function(){setTimeout(function(){document.getElementById('gameiframe').scrollIntoView();}, 500)};</script></div>
     </div>
-</div>
+</section>
 <!-- footer -->
 <div class="footer">
 
@@ -244,4 +198,8 @@
 </div>
 <!-- //footer -->
 </body>
+
+<script>$(document).ready(function() {let container=document.getElementById("game_container"),button=document.getElementById("fs");var fullscreen=!1;function makeFullScreen(e){e.requestFullscreen?e.requestFullscreen():e.msRequestFullscreen?e.msRequestFullscreen():e.mozRequestFullScreen?e.mozRequestFullScreen():e.webkitRequestFullscreen?e.webkitRequestFullscreen():console.log("Fullscreen API is not supported")}$(button).on("click",function(){1==fullscreen?(document.exitFullscreen(),button.innerText="Full screen",$(button).addClass("passive"),fullscreen=!1):(makeFullScreen(container),button.innerText="x",$(button).removeClass("passive"),fullscreen=!0)});});</script>
+
+
 </html>
