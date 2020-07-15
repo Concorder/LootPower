@@ -69,6 +69,11 @@ ul {
 }
 label {
 	margin:0;
+	font-weight: normal;
+	margin-top: 10px;
+}
+form a {
+	color: var(--bright);
 }
 a:focus, a:hover {
 	text-decoration: none;
@@ -409,6 +414,18 @@ form .btn-primary {
 }
 form label {
 	color: #fff;
+	font-size: 12px;
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+}
+form label input {
+	position: absolute;
+	top: 0;
+	left: -20px;
+	margin: 0 !important;
 }
 form p {
 	color: #fff;
@@ -1913,9 +1930,9 @@ color: var(--bright) !important;
 }
 .agileits_reply input[type="text"], .agileits_reply input[type="email"], select {
     width: 100%;
-    padding: 13px;
+    padding: 10px;
     border: 1px solid var(--primary);
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 	background:transparent;
 	outline:none;
 }
@@ -1962,6 +1979,7 @@ select:focus {
     color:var(--secondary);
 	background:var(--main-text);
 }
+
 .ltpwrls_search input[type="text"] {
     outline: none;
     padding: 10px;
@@ -2006,6 +2024,44 @@ select:focus {
     width: 48%;
     float: left;
     margin: 1%;
+}
+.ltpwragile_flickr_post_left.payment{
+	width: 98%}
+.payment{
+position: relative;
+}
+.payment_large {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+.payment_large img {
+	max-height: 60px;
+	width: auto;
+	max-width: 100px;
+	margin: 20px;
+}
+.extraCard {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background: linear-gradient(45deg, #e25a31, #d8ad12);
+	padding: 50px 20px;
+	margin-top: 65px;
+}
+.benefit {
+	text-align: left;
+}
+.joystick {
+	width: 200px;
+	position: absolute;
+	right: -50px;
+	bottom: -50px;
+	opacity: 0.1;
 }
 .new_games {
 	position: relative;
@@ -3048,6 +3104,20 @@ li>a {
 	}
 }
 @media screen and (max-width:480px){
+	.signUp .container {
+		display: flex;
+		flex-direction: column;
+	}
+	.payment_large {
+		display: block;
+		text-align: center;
+	}
+	.extraCard {
+		margin-top: 0;
+	}
+	.signUp .container > .wthree_blog_left {
+		order: 2;
+	}
 	.img_holder {
 		height: 360px;
 	}
