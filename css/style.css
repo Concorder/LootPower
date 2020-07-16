@@ -643,6 +643,8 @@ h3.game_title {
 	-ms-transition: 0.5s all;
 }
 .service-grid-agileits p{
+	min-height: 85px;
+	padding: 0 20px;
 	font-size:14px;
 	line-height:27px;
 	color:var(--main-text);
@@ -2510,6 +2512,7 @@ li>a {
 		font-size: 25px;
 		padding: 15px;
 	}
+
 	.new-grid-ltpwrl,.new-grid-agile{
 		width: 25%;
 		float: left;
