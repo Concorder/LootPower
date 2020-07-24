@@ -454,7 +454,6 @@ h3.game_title {
 .gallery-grid  {
 	display: flex;
 	position: relative;
-	height: 360px;
 	overflow: hidden;
 }
 .view.gallery-grid .mask {
@@ -2181,6 +2180,30 @@ li>a {
 	color: var(--secondary);
 	margin: 0 10px 0 0;
 
+}
+.game_list {
+	text-align: center;
+}
+.pagination > li > a, .pagination > li > span {
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	color: var(--bright);
+	text-decoration: none;
+	background-color: unset;
+	border: 1px solid var(--primary);
+}
+.pagination > li > a:hover, .pagination > li > span:hover{
+	background: var(--secondary);
+	color: var(--main-text);
+	text-shadow: 0 0 10px #fff;
+}
+.pagination > li > a.active{
+	background: var(--secondary);
+	color: var(--main-text);
+	text-shadow: 0 0 10px #fff;
 }
 .game_name {position: relative; width: max-content;}
 .game_name:after {
