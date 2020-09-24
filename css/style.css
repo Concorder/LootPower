@@ -1936,6 +1936,13 @@ color: var(--bright) !important;
 	background:transparent;
 	outline:none;
 }
+.agileits_reply input[name="expMonth"],
+.agileits_reply input[name="expYear"],
+.agileits_reply input[name="cvv2"] {
+	width: calc(100% / 3 - 3px);
+	display: inline-block;
+	white-space: nowrap;
+}
 select {
 	color: var(--bright);
 }
@@ -2434,6 +2441,75 @@ li>a {
 	color: #425bea;
 	cursor: pointer;
 }
+.cardForm > span {
+	position: relative;
+}
+.cardForm .glyphicon {
+	position: absolute;
+	right: 7px;
+	color: var(--primary);
+	cursor: pointer;
+	font-size: 21px;
+	top: -2px;
+	transition: 0.3s color;
+}
+.cardForm .glyphicon:hover {
+	color: var(--secondary);
+}
+.cardForm .glyphicon:hover .cardTip {
+	display: block;
+	opacity: 1;
+}
+.cardTip {
+	display: none;
+
+	background: #e0e0e0;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	bottom: 30px;
+	width: 200px;
+	z-index: 333;
+	overflow: unset;
+	padding: 15px;
+	border-radius: 10px;
+}
+.cardTip::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	bottom: -8px;
+	border-top: 10px solid #e0e0e0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+.cardTip.tipRight {
+	transform: unset;
+	left: -170px;
+}
+.cardTip.tipRight::before {
+	left: 180px;
+}
+
+.cardTip.tipLeft {
+	transform: unset;
+	left: -86px;
+}
+.cardTip.tipLeft::before {
+	left: 93px;
+}
+.loading_gif {
+	display: block;
+	mix-blend-mode: screen;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	filter: contrast(1.3);
+}
+.cc_process.thx .contact-agileinfo .framed h3 {
+	margin-bottom: 0;
+}
 
 /*-- //single --*/
 
@@ -2461,7 +2537,6 @@ li>a {
 		min-height: 626px;
 	}
 }
-
 @media screen and (max-width: 1366px){
 	[class*="small-dialog"] {
 		padding: 40px 20px;

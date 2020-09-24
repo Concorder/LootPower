@@ -23,11 +23,12 @@
     <!-- font -->
 
     <!-- //font -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/login.js"></script>
 </head>
-<body>
+<body class="signUp">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVZPCLL"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -125,7 +126,10 @@
 <div class="container">
     <div class="cc_overlay">
         <div class="close_x">+</div>
-        <div id="message_proc"><h3>Payment Processing...</h3><span> Please do not close the page</span></div>
+        <div id="message_proc"><h3>Payment Processing...</h3>
+            <span> Please do not close the page</span>
+            <img class="loading_gif" src="./images/loading.gif" alt="">
+        </div>
         <span id="message_error"></span>
         <div id="message_success">
             <h3>Registration is complete!</h3>
@@ -134,24 +138,35 @@
         </div>
     </div>
 <div class="blog">
-
-
         <div class="col-md-7 wthree_blog_left">
 
             <div class="agileits_reply">
                 <h3 class="membership_title">
                     The following cards are accepted as a payment method:
                 </h3>
+                <div class="card-icons">
+                    <img src="./images/master_small.png" alt="">
+                    <img src="./images/maestro_small.png" alt="">
+                    <img src="./images/electron_small.png" alt="">
+                </div>
+                <div class="error-holder">
+                    <span id="cc_form_error">error message</span>
+                </div>
+                <form method="post" class="cardForm">
+                    <span><input type="text" id="cardNumber" name="cardNumber" placeholder="Card Number" required=""></span>
+                    <span><input type="text" id="cardName" name="cardName" placeholder="Name on Card" required=""><span class="glyphicon glyphicon-question-sign"><div class="cardTip tipRight"><img
+                            src="./images/cardTip2.jpg" alt=""></div></span></span>
+                    <span><input type="text" id="expMonth" maxlength="2" name="expMonth" placeholder="Exp. Month" required=""><span class="glyphicon glyphicon-question-sign"><div class="cardTip tipLeft"><img
+                            src="./images/cardTip1.jpg" alt=""></div></span></span>
+                    <span><input type="text" id="expYear" maxlength="2" name="expYear" placeholder="Exp. Year" required=""><span class="glyphicon glyphicon-question-sign"><div class="cardTip "><img
+                            src="./images/cardTip1.jpg" alt=""></div></span></span>
+                    <span><input type="text" id="cvv2" name="cvv2" placeholder="CVV2" required=""><span class="glyphicon glyphicon-question-sign"><div class="cardTip tipRight"><img
+                            src="./images/cardTip3.jpg" alt=""></div></span></span>
+                <input class="button" type="submit" value="Continue">
+            </form>
             </div>
-            <div class="card-icons">
-                <img src="./images/master_small.png" alt="">
-                <img src="./images/maestro_small.png" alt="">
-                <img src="./images/electron_small.png" alt="">
-            </div>
-            <div class="error-holder">
-                <span id="cc_form_error">error message</span>
-            </div>
-            <!--PLACE FOR IFRAME-->
+
+
 
 
             <div class="payment_large" >
@@ -160,32 +175,39 @@
                 <img src="./images/visa_white.png">
                 <img src="./images/visa-secure.png"></div>
         </div>
-
         <div class="col-md-5 wthree_blog_right">
 
-            <div class="ltpwragile_flickr_posts">
+        <div class="ltpwragile_flickr_posts">
 
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng1.jpg" alt=" " class="img-responsive"></a>
+            <div class="ltpwragile_flickr_post_left payment">
+                <div class="extraCard">
+                    <img class="joystick" src="./images/joystick.svg" alt="">
+                    <h2>VIP Membership</h2>
+                    <h3>28.95€ / month</h3>
+                    <ul class="benefit">
+                        <li>Unlimited Access</li>
+                        <li>Try 3 days, 1€ only</li>
+                        <li>24/7 Support</li>
+                    </ul>
                 </div>
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng2.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng3.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng4.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng5.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="game_info.html"><img src="images/ng6.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="clearfix"> </div>
+
             </div>
+            <div class="ltpwragile_flickr_post_left">
+                <img src="images/c4.jpg" alt=" " class="img-responsive">
+            </div>
+            <div class="ltpwragile_flickr_post_left">
+                <img src="images/c2.jpg" alt=" " class="img-responsive">
+            </div>
+            <!--<div class="ltpwragile_flickr_post_left">
+                <a href="game_info.html"><img src="images/ng4.jpg" alt=" " class="img-responsive"></a>
+            </div>
+            <div class="ltpwragile_flickr_post_left">
+                <a href="game_info.html"><img src="images/ng5.jpg" alt=" " class="img-responsive"></a>
+            </div>-->
+
+            <div class="clearfix"> </div>
         </div>
+    </div>
         <div class="clearfix"> </div>
     </div>
 </div>
@@ -264,6 +286,8 @@
 <script>
     $('.close_x').on('click', function () {
         $('.cc_overlay').fadeOut(100);
-    })
+    });
+
+
 </script>
 </html>
