@@ -2510,6 +2510,9 @@ li>a {
 .cc_flow.thx .contact-agileinfo .framed h3 {
 	margin-bottom: 0;
 }
+.main .navbar:hover {
+	background: rgba(24, 57, 83, 0.5);
+}
 
 /*-- //single --*/
 
