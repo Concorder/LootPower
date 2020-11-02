@@ -1622,6 +1622,14 @@ p.agileits{
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	border: none;
 }
+form .form-hint {
+	color: var(--bright);
+	text-align: center;
+	display: block;
+}
+form .form-hint b {
+	color: var(--secondary);
+}
 .navbar-default .navbar-nav > li > a {
 	font-family: "Kaushan Script", sans-serif;
 	font-size: 18px;
@@ -1979,6 +1987,7 @@ select:focus {
 	color:var(--secondary);
 	background:var(--main-text);
 	outline:none;
+	min-width: 200px;
 
 }
 .agileits_reply input[type="submit"]:hover{
