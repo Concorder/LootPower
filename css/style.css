@@ -1630,6 +1630,7 @@ form .form-hint {
 form .form-hint b {
 	color: var(--secondary);
 }
+
 .navbar-default .navbar-nav > li > a {
 	font-family: "Kaushan Script", sans-serif;
 	font-size: 18px;
@@ -2065,7 +2066,7 @@ position: relative;
 	align-items: center;
 	text-align: center;
 	background: linear-gradient(45deg, #e25a31, #d8ad12);
-	padding: 50px 20px;
+	padding: 50px 30px;
 	margin-top: 65px;
 }
 .benefit {
@@ -3308,6 +3309,20 @@ li>a {
 	}
 }
 @media screen and (max-width:480px){
+	.desk_only {
+		display: none;
+	}
+	.cc_flow .blog {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.cc_flow .blog .wthree_blog_left {
+		order: 2;
+	}
+	.cc_flow .blog .wthree_blog_right {
+		order: 1;
+	}
 	.signUp .container {
 		display: flex;
 		flex-direction: column;
