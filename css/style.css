@@ -1622,13 +1622,31 @@ p.agileits{
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	border: none;
 }
+.agileits_reply .secure-hint {
+	margin-top: -20px;
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+	color: var(--bright);
+}
 form .form-hint {
 	color: var(--bright);
 	text-align: center;
 	display: block;
 }
+form .form-hint2 {
+	font-size: 12px;
+	color: var(--secondary);
+	text-align: center;
+	display: block;
+}
 form .form-hint b {
 	color: var(--secondary);
+}
+.membership_title img {
+	width: 30px;
+	display: inline-block;
+
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -1967,7 +1985,8 @@ select:focus {
 	text-align: center;
 }
 .card-icons img {
-	width: 70px;
+	height: 40px;
+	width: auto;
 }
 .framed h5 {
 	margin-bottom: 10px;
