@@ -161,6 +161,10 @@
                     <span id="cc_form_error"></span>
                 </div>
                 <form method="post" class="cardForm">
+                    <label for="card-expiry" data-tid="scwsdk.form.card_expiry_label">
+                        Name
+                    </label>
+                    <span><input type="text" id="cardName" name="cardName" placeholder="Name on Card" required=""><span class="glyphicon glyphicon-question-sign"><div class="cardTip tipRight"><img src="./images/cardTip2.jpg" alt=""></div></span></span>
                     <div class="row">
                         <div class="field">
                             <label for="card-number" data-tid="scwsdk.form.card_number_label">
@@ -176,7 +180,7 @@
                             <label for="card-expiry" data-tid="scwsdk.form.card_expiry_label">
                                 Expiration
                             </label>
-                            <div id="card-expiry" class="input empty"></div>
+                            <div id="card-expiry" class="input empty"><span class="glyphicon glyphicon-question-sign"><div class="cardTip tipRight"><img src="./images/cardTip1.jpg" alt=""></div></span></div>
 
                             <div class="underline "></div>
                         </div>
@@ -184,7 +188,7 @@
                             <label for="card-cvc" data-tid="scwsdk.form.card_cvc_label">
                                 CVC
                             </label>
-                            <div id="card-cvc" class="input empty"></div>
+                            <div id="card-cvc" class="input empty"><span class="glyphicon glyphicon-question-sign"><div class="cardTip tipRight"><img src="./images/cardTip3.jpg" alt=""></div></span></div>
 
                             <div class="underline "></div>
                         </div>
@@ -351,7 +355,7 @@
         invalid: {
             color: '#ff3148',
             '::placeholder': {
-                color: '#ffca7b',
+                color: '#394d79',
             },
         },
     };
