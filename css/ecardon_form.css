@@ -68,6 +68,13 @@ div.wpwl-brand-custom  { margin: 0px 5px; background-image: url("https://oppwa.c
 
     color: #616161;
 }
+
+.wordline_sub {
+    text-align: center;
+    display: block;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
 @media (max-width: 620px) {
     .wpwl-group-brand {
         width: 50%;
