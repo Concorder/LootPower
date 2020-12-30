@@ -416,8 +416,7 @@ form label {
 	color: #fff;
 	font-size: 12px;
 	max-width: 480px;
-	margin-left: auto;
-	margin-right: auto;
+
 	display: block;
 	position: relative;
 }
@@ -2540,6 +2539,18 @@ li>a {
 }
 .main .navbar:hover {
 	background: rgba(24, 57, 83, 0.5);
+}
+
+.cancel .container > p {
+	margin: 15px auto;
+	max-width: 720px;
+}
+.cancel form .btn-primary {
+	margin-top: 25px;
+}
+
+.cancel .login_page form .btn {
+	margin-top: 25px;
 }
 
 /*-- //single --*/
