@@ -69,7 +69,6 @@
         max-width: 100%
     }
 
-
     .internal_offer .top {
         border-bottom: 5px solid #5d5d5d;
         padding-bottom: 20px;
@@ -104,10 +103,9 @@
     }
     .please-fill {
         display: block;
-        font-size: 32px;
-        font-weight: 600;
-        color: #5cb85c;
+        font-size: 38px;
         margin-top: 15px;
+
     }
     .please-fill-sub {
         display: block;
@@ -310,11 +308,8 @@
         font-weight:400;
 
     }
-    .side-box {
-        display: flex;
-        flex-direction: column;
-        margin-top: 25px;
-        justify-content: space-evenly;
+    .side-box{
+        margin-top:25px;
     }
     #product{
         max-width:50%;
@@ -639,44 +634,7 @@
 
     .field {
         margin-bottom: 15px;
-    }
-/*namefield*/
-
-    .nameholder {
-        position: relative;
-        display: block;
-    }
-    #cardName::placeholder{
-        color: #cacaca;
-        font-weight: 400;
-    }
-    .glyphicon {
-        position: absolute;
-        right: 12px;
-        top: unset;
-        color: #757575;
-        cursor: pointer;
-        height: fit-content;
-        font-size: 21px;
-        bottom: 8px;
-        transition: 0.3s color;
-    }
-    .glyphicon img {
-        visibility: hidden;
-        position: absolute;
-        top: -195px;
-        right: 0;
-        border: 12px solid #fff;
-        filter: drop-shadow(2px 6px 5px #999);
-    }
-    .glyphicon:hover img {
-        visibility: visible;
-    }
-
-
-    /* Tooltip text */
-
-</style>
+    }</style>
 <script src="https://cdn.safecharge.com/safecharge_resources/v1/websdk/safecharge.js"></script>
 <div class="container-fluid main main--payment">
     <div class="container">
@@ -694,38 +652,30 @@
             <div class="col-md-6">
                 <span class="please-fill">Please fill out your information: </span> <span class="please-fill-sub"> The following cards are accepted as payment method: </span>
                 <div class="card-icons">
-                    <img alt="" src="http://img.mobilenobo.net/EEZwyQ9RLHj22QB.png" /> <img alt=""  src="http://img.mobilenobo.net/8S75uuy20w_mjVh.png" /> <img alt="" src="http://img.mobilenobo.net/nwO5I0cvsMK_NWv.png" />
+                    <img alt="" src="http://img.mobilenobo.net/EEZwyQ9RLHj22QB.png" /> <img alt="" src="http://img.mobilenobo.net/8S75uuy20w_mjVh.png" /> <img alt="" src="http://img.mobilenobo.net/nwO5I0cvsMK_NWv.png" />
                 </div>
                 <span id="error_message">A temporary error encountered.<br>Please reenter your card details.</span>
-
                 <div id="credit-card-macro-div" width="100%">
                     <form action="/charge" id="payment-form" method="post">
-                        <div class="nameholder field row">
-                            <label for="cardName">Card Name </label>
-                            <input type="text" id="cardName" name="cardName" placeholder="Name on Card" required="">
-                            <div class="glyphicon glyphicon-question-sign "><img  src="./images/cardTip2.jpg" alt="">
-                            </div>
-                        </div>
                         <div class="row">
                             <div class="field">
                                 <label data-tid="scwsdk.form.card_number_label" for="card-number">Card number </label>
                                 <div class="input" id="card-number">
-                                </div>
+                                   </div>
                                 <div class="underline"></div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="field col6">
                                 <label data-tid="scwsdk.form.card_expiry_label" for="card-expiry">Expiration </label>
                                 <div class="input empty" id="card-expiry">
-                                </div>
+                                   </div>
                                 <div class="underline "></div>
                             </div>
                             <div class="field col6">
                                 <label data-tid="scwsdk.form.card_cvc_label" for="card-cvc">CVC </label>
                                 <div class="input empty" id="card-cvc">
-                                </div>
+                                    </div>
                                 <div class="underline "></div>
                             </div>
                         </div>
@@ -734,9 +684,61 @@
                     <div id="loadingHolder">
                         <img alt="" id="loading" src="http://img.mobilenobo.net/nb84yYKz2gHt3OJ.gif" /> <span>Payment processing...</span></div>
                     <button id="submit_btn">Continue</button></div>
+                <div class="row hidden-xs" data-aos="fade-up" data-aos-duration="600" data-aos-once="true" id="review-row">
+                    <div class="col-md-12">
+                        <div class="page-header">
+                            <h3>
+                                Reviews</h3>
+                        </div>
+                        <div class="media">
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    Love this!</h4>
+                                <div class="stars">
+                                    <img src="http://img.mobilenobo.net/2LOPpKsPXAfyY4W.15765041341.jpg" /></div>
+                                <img src="http://img.mobilenobo.net/jYDoN1g9h0KwLbg.png" style="float:left" />
+                                <p class="review-text">
+                                    Fantastic, I&#39;m totally blown away by the quick delivery!</p>
+                                <p>
+                                    <span class="reviewer-name"><strong>John Wilson</strong></span><span class="review-date">1h ago</span></p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    Fantastic product</h4>
+                                <div class="stars">
+                                    <img src="http://img.mobilenobo.net/Qwa53GFs6smqpYR.15765042851.jpg" /></div>
+                                <img src="http://img.mobilenobo.net/7PJAqC11l90APDt.png" style="float:left" />
+                                <p class="review-text">
+                                    Your company is truly upstanding and i&#39;m behind the product 100%. Not able to tell you how happy I am. :D</p>
+                                <br />
+                                <p>
+                                    <span class="reviewer-name"><strong>Emma Johnson</strong></span><span class="review-date">2h ago</span></p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    Thank you!</h4>
+                                <div class="stars">
+                                    <div class="stars">
+                                        <img src="http://img.mobilenobo.net/Qwa53GFs6smqpYR.15765042851.jpg" /></div>
+                                </div>
+                                <img src="http://img.mobilenobo.net/hI35gOUraSkIC12.png" style="float:left" />
+                                <p class="review-text">
+                                    We love it. I definitely recommend...</p>
+                                <br />
+                                <p>
+                                    <span class="reviewer-name"><strong>James Price</strong></span><span class="review-date">8h ago</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 border side-box">
-
+                <div class="text-center product-box hidden-xs hidden-sm">
+                    <img id="product" src="http://img.mobilenobo.net/V9fmRFfI84K7X5w.png" /></div>
                 <div class="secure-paymentbox">
                     <h5>
                         Due to the SSL-encryption</h5>
@@ -744,6 +746,32 @@
                         <img src="http://img.mobilenobo.net/JMdHGqJP2Rn2JtV.png" /> Secure Payment</h4>
                 </div>
                 <div class="offers-box">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6 col-md-offset-1">
+                            <p>
+                                Premium + iPhone 12</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4 text-center">
+                            <p>
+                                1.00 GBP</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-md-offset-1">
+                            <p>
+                                Free delivery</p>
+                        </div>
+                        <div class="hidden-xs col-xs-6 col-md-4 text-center">
+                            <p>
+                                0.00 GBP</p>
+                        </div>
+                        <div class="col-xs-6 col-md-6 col-md-offset-1">
+                            <h2>
+                                Amount</h2>
+                        </div>
+                        <div class="col-xs-6 col-md-4 text-center">
+                            <h2>
+                                1.00 GBP</h2>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-sm-12  orderspecs">
                             <div class="panel panel-default">
@@ -765,7 +793,7 @@
                                     <tbody>
                                     <tr>
                                         <td scope="row">
-                                            <span style="font-size: 16px; background-color: rgb(255, 255, 255);">The subscription will be renewed on a monthly basis in the amount specified in terms of you location.
+                                            <span style="font-size: 16px; background-color: rgb(255, 255, 255);">Remember that this is a subscription service&nbsp;which continues automatically if it is not terminated within 3 days.&nbsp;The subscription will be renewed on a monthly basis in the amount of 28.95 GBP.
                                             </span></td>
                                     </tr>
                                     </tbody>
