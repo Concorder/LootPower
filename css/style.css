@@ -32,21 +32,30 @@ body #buttonCode {
 	right: 20px;
 	width: min-content;
 	text-align: center;
-	background: var(--secondary);
+	background: #fff;
 	text-shadow: 0 0 5px #fff;
-	border-radius: 50px;
-	padding: 21px 15px;
-	color: #fff !important;
+	border-radius: 100%;
+	padding: 15px 15px;
+	color: var(--secondary) !important;
 	font-family: 'Kaushan Script', sans-serif;
 	z-index: 999;
-	animation: lightFlick 5s infinite;
+	animation: lightFlick 4s infinite;
 	box-shadow: 0 0 0 var(--secondary);
 	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
+body #buttonCode svg {
+	fill: var(--secondary);
+	max-width: 100%;
+	height: fit-content;
+	min-width: 100px;
+}
 @keyframes lightFlick {
-	0% {background: var(--secondary); box-shadow: 0 0 0px var(--secondary)}
-	10%{background: var(--highlight); box-shadow: 0 0 10px var(--highlight)}
-	20%{background: var(--secondary); box-shadow: 0 0 0px var(--secondary)}
+	0% {transform:none;}
+	10%{transform: rotate(-9deg)}
+	13%{transform: rotate(9deg)}
+	16%{transform: rotate(-9deg)}
+	19%{transform: rotate(9deg)}
+	22%{transform: none;}
 }
 body a:hover {
 	text-decoration: none;
@@ -2579,6 +2588,7 @@ li>a {
 /*-- //single --*/
 
 /*-- responsive--*/
+
 @media screen and (max-width: 1440px){
 	.pop-up-content-agileits-ltpwrlayouts h4 {
 		margin-bottom: 15px;
@@ -3371,8 +3381,11 @@ li>a {
 	body #buttonCode {
 		font-size: 15px;
 		left: 20px;
-		padding: 15px 10px;
+		padding: 7px 10px;
 		filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+	}
+	body #buttonCode svg {
+		min-width: 70px;
 	}
 	.cc_flow .blog {
 		display: flex;
