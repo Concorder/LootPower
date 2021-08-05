@@ -45,7 +45,7 @@ body #buttonCode {
 }
 @keyframes lightFlick {
 	0% {background: var(--secondary); box-shadow: 0 0 0px var(--secondary)}
-	10%{background: var(--highlight); box-shadow: 0 0 10px var(--highlight)}
+	10%{background: var(--highlight); box-shadow: 0 0 10px var(--highlight); transform:scale(0.9)}
 	20%{background: var(--secondary); box-shadow: 0 0 0px var(--secondary)}
 }
 body a:hover {
