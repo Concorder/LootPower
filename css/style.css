@@ -39,7 +39,7 @@ body #buttonCode {
 	color: var(--secondary) !important;
 	font-family: 'Kaushan Script', sans-serif;
 	z-index: 999;
-	animation: lightFlick 4s infinite;
+	animation: lightFlick 2s infinite;
 	box-shadow: 0 0 0 var(--secondary);
 	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
@@ -50,12 +50,9 @@ body #buttonCode svg {
 	min-width: 100px;
 }
 @keyframes lightFlick {
-	0% {transform:none;}
-	10%{transform: rotate(-9deg)}
-	13%{transform: rotate(9deg)}
-	16%{transform: rotate(-9deg)}
-	19%{transform: rotate(9deg)}
-	22%{transform: none;}
+	100% {
+		box-shadow: 0 0 0 45px rgb(232 76 61 / 0%);
+	}
 }
 body a:hover {
 	text-decoration: none;
