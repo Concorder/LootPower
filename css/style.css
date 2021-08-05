@@ -3382,7 +3382,7 @@ li>a {
 		filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 	}
 	body #buttonCode svg {
-		min-width: 70px;
+		min-width: 60px;
 	}
 	.cc_flow .blog {
 		display: flex;
