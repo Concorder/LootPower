@@ -26,8 +26,8 @@ $(document).ready(function(){
     //add data-nobutton="1" in body to hide
     if (placementDiv.dataset.nobutton !== "1"
         && !( document.URL.includes("game_play"))
-        && !( document.URL.includes("contactus")))
-    {
+        && !( document.URL.includes("contactus"))
+    ){
         var newButton = document.createElement('a');
         newButton.setAttribute("id","buttonCode");
         newButton.setAttribute("href","contactus.html");
