@@ -47,7 +47,7 @@ body #buttonCode {
 body #buttonCode svg {
 	fill: var(--secondary);
 	max-width: 100%;
-	height: fit-content;
+	height: auto;
 	min-width: 100px;
 }
 @keyframes lightFlick {
