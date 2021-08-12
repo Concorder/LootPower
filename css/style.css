@@ -30,8 +30,8 @@ body #buttonCode {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	width: min-content;
-	height: min-content;
+	width: 80px;
+	height: 80px;
 	text-align: center;
 	background: #fff;
 	text-shadow: 0 0 5px #fff;
@@ -3014,7 +3014,7 @@ li>a {
 	}
 	#profile svg {
 		position: relative;
-		top: 0;
+		top: unset;
 	}
 	.navbar-default .navbar-toggle {
 		background: transparent;
@@ -3036,7 +3036,9 @@ li>a {
 		text-align: left;
 		padding-left: 15px;
 	}
-
+	#profile {
+		padding: 15px 0;
+	}
 
 	.navbar-toggle {
 		border-radius: 0px;
