@@ -3413,6 +3413,8 @@ li>a {
 		min-width: 100vw;
 	}
 	body #buttonCode {
+		width: 80px;
+		height: 80px;
 		font-size: 15px;
 		left: 20px;
 		padding: 7px 10px;
