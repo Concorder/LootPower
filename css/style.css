@@ -10,6 +10,9 @@
 	--medium_grad: linear-gradient(45deg, #394d79, #091555);
 	--ambient_grad: linear-gradient(90deg, #1d1d1d, #202d4a);
 }
+.mob_only {
+	display: none;
+}
 body {
 	color: var(--main-text);
 	padding: 0;
@@ -50,6 +53,7 @@ body #buttonCode svg {
 	height: auto;
 	min-width: 100px;
 }
+
 @keyframes lightFlick {
 	100% {
 		box-shadow: 0 0 0 45px rgb(232 76 61 / 0%);
@@ -3025,6 +3029,9 @@ li>a {
 	}
 }
 @media screen and (max-width: 736px){
+	.mob_only {
+		display: block;
+	}
 	#sub_menu {
 		position: relative;
 		margin-top: 0;
@@ -3054,9 +3061,7 @@ li>a {
 		border-bottom: 1px solid var(--primary);
 	}
 	#profile {
-		height: 30px;
-		width: 30px;
-		padding: 0;
+		font-weight: 700;
 	}
 
 	.navbar-collapse.in {
@@ -3403,6 +3408,7 @@ li>a {
 	.desk_only {
 		display: none;
 	}
+
 	#game_container {
 		min-width: 100vw;
 	}
