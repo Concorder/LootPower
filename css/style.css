@@ -189,7 +189,7 @@ img {
 	width:160px;
 }
 .navbar-nav>li {
-	padding: 5px 15px;
+	padding: 5px 5px;
 	font-size: 16px;
 	color: var(--bright);
 }
@@ -488,6 +488,9 @@ h3.game_title {
 .view.gallery-grid .mask {
 	width: 100%;
 }
+.col-md-3 .view-eighth {
+	height: 160px;
+}
 ::-webkit-scrollbar {
 	overflow: visible;
 	width: 10px;
@@ -531,6 +534,8 @@ h3.game_title {
 }
 .view h4 {
     text-transform: capitalize;
+	height: 40px;
+	overflow: hidden;
     color: #fff;
     text-align: center;
     position: relative;
@@ -1286,6 +1291,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	text-align:center;
 }
 .view {
+
 	overflow: hidden;
     position: relative;
 }
@@ -1718,11 +1724,13 @@ form .form-hint b {
 }
 #profile svg {
 	width: 30px;
+	height: 30px;
 	top: 12px;
 	fill: var(--bright);
 	position: absolute;
 	transition: 0.5s;
 }
+
 #profile svg:hover {
 	fill: #fff;
 	-webkit-filter: drop-shadow( 0px 0px 3px var(--bright) );
@@ -2583,10 +2591,14 @@ li>a {
 	margin-top: 25px;
 }
 
+.nav > li > a {
+	padding: 15px 0;
+}
+
 /*-- //single --*/
 
 /*-- responsive--*/
-
+@mediv  screen and (max-width: )
 @media screen and (max-width: 1440px){
 	.pop-up-content-agileits-ltpwrlayouts h4 {
 		margin-bottom: 15px;
@@ -2986,6 +2998,15 @@ li>a {
 		font-size: 19px;
 	}
 }
+@media screen and (min-width: 768px) {
+	.navbar-right {
+		float: right !important;
+		margin-right: -15px;
+		width: calc(100% - 160px);
+		display: flex;
+		justify-content: space-around;
+	}
+}
 @media screen and (max-width: 768px){
 
 	.collection-text p {
@@ -3027,6 +3048,10 @@ li>a {
 	.navbar-nav {
 		margin: 6px 0 0 ;
 		background: var(--darker);
+	}
+	.navbar-nav>li {
+		padding: 5px 5px 5px 30px;
+		border-bottom: 1px solid var(--primary);
 	}
 
 	.navbar-collapse.in {
