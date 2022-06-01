@@ -1458,7 +1458,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	float: left;
 	width: calc(25% - 1em);
 	margin: 0.5em;
-
+	height: 160px;
 }
 .img_holder {
 	top: 0;
@@ -3133,6 +3133,9 @@ li>a {
 		color: #8a8a8a;
 		padding-right: 0.7em;
 	}
+	.gallery-grid {
+		height: 120px;
+	}
 }
 @media screen and (max-width:667px){
 	.callbacks_nav {
@@ -3365,6 +3368,7 @@ li>a {
 	.cc_overlay {
 		width: 90vw;
 	}
+
 	.view.gallery-grid .mask {
 		width: inherit;
 	}
