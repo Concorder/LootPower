@@ -3835,3 +3835,35 @@ li>a {
 		font-size: 1.2em!important;
 	}
 }
+
+.framed h4 {
+    color: #02b484;
+}
+
+.pop-up {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: #21282da8;
+	display: none;
+	z-index: 100000;
+}
+
+.for_background {
+	background: var(--secondary);
+	color: #fff;
+	font-size: 19px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 25px;
+	width: 300px;
+	margin: 70px auto;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.loading_gif_second {
+	width: 70px;
+	margin-top: 20px;
+}
